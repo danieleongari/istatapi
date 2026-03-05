@@ -15,7 +15,7 @@ from urllib3.util.retry import Retry
 class ISTAT:
     """Base class that provides useful functions to communicate with ISTAT API"""
     def __init__(self):
-        self.base_url = "http://sdmx.istat.it/SDMXWS/rest"
+        self.base_url = "https://esploradati.istat.it/SDMXWS/rest"
         self.agencyID = "IT1"
 
     def _request(self, path, **kwargs):
